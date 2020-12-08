@@ -5,7 +5,7 @@ async function getQuote() {
     try {
         const response = await fetch(proxyURL + apiURL)
         const data = await response.json()
-        console.log('ghghfjfdd', data)
+        console.log(data)
     } catch (error) {
         getQuote()
         console.log('Ой, ничего не вышло', error)
